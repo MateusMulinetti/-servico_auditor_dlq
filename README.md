@@ -2,7 +2,7 @@
 
 Optei por utilizar a Arquitetura Hexagonal (Ports e Adapters). O primeiro motivo é prático: como já vínhamos trabalhando com esse padrão nas aulas anteriores da disciplina, eu tinha mais familiaridade e segurança para estruturar o projeto do zero de forma independente.
 
-Tambem disso, o modelo hexagonal se encaixa perfeitamente nas necessidades técnicas desse tipo de serviço por dois fatores:
+O modelo hexagonal se encaixa perfeitamente nas necessidades técnicas desse tipo de serviço por dois fatores:
 
 Independência tecnológica: O ecossistema da AWS (SQS) e o banco de dados H2 são tratados puramente como detalhes de infraestrutura. Se amanhã o banco mudar para PostgreSQL ou a fila para RabbitMQ, o coração da aplicação (onde fica a regra da triagem) continua intacto, sem precisar de nenhuma alteração.
 
